@@ -1,0 +1,52 @@
+{
+  // 1. 字體與基礎編輯器設定（保留個人偏好）
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "bold",
+  "editor.fontSize": 18,
+  "editor.inlayHints.fontFamily": "'JetBrains Mono NL', '中文', monospace",
+
+  // 2. 前端開發的核心自動排版設定（新增）
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.autoSave": "afterDelay",
+
+  // 3. TODO Highlight 設定（聚焦於 Web 檔案格式）
+  "todohighlight.isEnable": true,
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.html",
+    "**/*.css",
+    "**/*.json"
+  ],
+
+  // 4. 註解顏色與語法高亮自訂（保留個人偏好）
+  "editor.semanticHighlighting.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "comments": "#FF8C00",
+    "textMateRules": [
+      {
+        "scope": "comment.line.double-slash",
+        "settings": {
+          "foreground": "#FF8C00",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "comment.block",
+        "settings": {
+          "foreground": "#32CD32"
+        }
+      }
+    ]
+  },
+
+  // 5. VS Code 外觀與終端機設定（保留個人偏好）
+  "material-icon-theme.hidesExplorerArrows": true,
+  "workbench.sideBar.location": "right",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "terminal.integrated.env.windows": {
+    "LC_ALL": "zh_TW.UTF-8"
+  }
+}
