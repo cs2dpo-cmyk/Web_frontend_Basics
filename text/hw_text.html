@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學生課表查詢系統</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f3f4f6;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #d1d5db;
+            text-align: center;
+            vertical-align: middle;
+            padding: 8px 4px;
+        }
+        th {
+            background-color: #e5edff;
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+        .period-col {
+            background-color: #f8fafc;
+            font-weight: bold;
+            color: #334155;
+            width: 60px;
+        }
+        .course-title {
+            color: #0000ff; 
+            font-weight: 500;
+        }
+        .course-teacher {
+            color: #059669; 
+        }
+        .course-room {
+            color: #ca8a04; 
+        }
+        .course-sub {
+            color: #2563eb; 
+            font-size: 0.75rem;
+        }
+        .unset-room {
+            color: #dc2626; 
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 lg:p-8">
+
+    <div class="max-w-6xl mx-auto bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
+        <!-- Header Banner -->
+        <div class="bg-blue-600 text-white px-6 py-4 flex justify-between items-center">
+            <h1 class="text-lg sm:text-xl font-bold">資科一B_網路管理與雲端應用組 - 課表</h1>
+            <span class="text-xs sm:text-sm bg-blue-700 px-3 py-1 rounded-full">115學年度 </span>
+        </div>
+
+       
+        <div class="overflow-x-auto">
+            <table class="w-full min-w-[700px] text-xs sm:text-sm">
+                <thead>
+                    <tr>
+                        <th class="py-3">節次</th>
+                        <th class="py-3">星期一</th>
+                        <th class="py-3">星期二</th>
+                        <th class="py-3">星期三</th>
+                        <th class="py-3">星期四</th>
+                        <th class="py-3">星期五</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="period-col py-4">1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="bg-blue-50/50">
+                            <div class="course-title">職涯與職能發展</div>
+                            <div class="course-teacher">李怡慧</div>
+                            <div class="course-room">HT204</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td class="period-col py-4">2</td>
+                        <td></td>
+                        <td>
+                            <div class="course-title">計算機網路</div>
+                            <div class="course-teacher">鄭育欣</div>
+                            <div class="course-room">HT403</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">微積分(一)</div>
+                            <div class="course-teacher">李鴻志</div>
+                            <div class="course-room">HT302</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">網頁設計</div>
+                            <div class="course-teacher">李怡慧</div>
+                            <div class="course-room">HT404</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">職涯與職能發展</div>
+                            <div class="course-teacher">李怡慧</div>
+                            <div class="course-room">HT204</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                    </tr>
+
+                   
+                    <tr>
+                        <td class="period-col py-4">3</td>
+                        <td>
+                            <div class="course-title">體育（一）</div>
+                            <div class="course-teacher">邱芳斌</div>
+                            <div class="unset-room font-semibold">未設定</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">計算機網路</div>
+                            <div class="course-teacher">鄭育欣</div>
+                            <div class="course-room">HT403</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">微積分(一)</div>
+                            <div class="course-teacher">李鴻志</div>
+                            <div class="course-room">HT302</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">網頁設計</div>
+                            <div class="course-teacher">李怡慧</div>
+                            <div class="course-room">HT404</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">中文閱讀與思考</div>
+                            <div class="course-teacher">呂瑞生</div>
+                            <div class="course-room">SY518</div>
+                            <div class="course-sub">中文CA31</div>
+                        </td>
+                    </tr>
+
+                  
+                    <tr>
+                        <td class="period-col py-4">4</td>
+                        <td>
+                            <div class="course-title">體育（一）</div>
+                            <div class="course-teacher">邱芳斌</div>
+                            <div class="unset-room font-semibold">未設定</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">計算機網路</div>
+                            <div class="course-teacher">鄭育欣</div>
+                            <div class="course-room">HT403</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">微積分(一)</div>
+                            <div class="course-teacher">李鴻志</div>
+                            <div class="course-room">HT302</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">網頁設計</div>
+                            <div class="course-teacher">李怡慧</div>
+                            <div class="course-room">HT404</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">中文閱讀與思考</div>
+                            <div class="course-teacher">呂瑞生</div>
+                            <div class="course-room">SY518</div>
+                            <div class="course-sub">中文CA31</div>
+                        </td>
+                    </tr>
+
+                   
+                    <tr>
+                        <td class="period-col py-3 bg-amber-50">A</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="course-title">週班會</div>
+                            <div class="course-teacher">李怡慧</div>
+                            <div class="course-room">HT404</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td class="period-col py-4">5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="course-title">人工智慧</div>
+                            <div class="course-teacher">劉季涵</div>
+                            <div class="course-room">HT405</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">計算機概論</div>
+                            <div class="course-teacher">袁佳慶</div>
+                            <div class="course-room">HT306</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td class="period-col py-4">6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="course-title">人工智慧</div>
+                            <div class="course-teacher">劉季涵</div>
+                            <div class="course-room">HT405</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">計算機概論</div>
+                            <div class="course-teacher">袁佳慶</div>
+                            <div class="course-room">HT306</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                    </tr>
+
+                   
+                    <tr>
+                        <td class="period-col py-4">7</td>
+                        <td>
+                            <div class="course-title">英文（一）</div>
+                            <div class="course-teacher">徐曉雯</div>
+                            <div class="course-room">BW211</div>
+                            <div class="course-sub">英文LA27</div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="course-title">人工智慧</div>
+                            <div class="course-teacher">劉季涵</div>
+                            <div class="course-room">HT405</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                        <td>
+                            <div class="course-title">計算機概論</div>
+                            <div class="course-teacher">袁佳慶</div>
+                            <div class="course-room">HT306</div>
+                            <div class="course-sub">四資料1B網路管理與雲端應用組</div>
+                        </td>
+                    </tr>
+
+                  
+                    <tr>
+                        <td class="period-col py-4">8</td>
+                        <td>
+                            <div class="course-title">英文（一）</div>
+                            <div class="course-teacher">徐曉雯</div>
+                            <div class="course-room">BW211</div>
+                            <div class="course-sub">英文LA27</div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td class="period-col py-4">9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
