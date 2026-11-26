@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function fnChange(){
+            document.getElementById("span_Date").innerText =
+             document.getElementById("txtDate").value;
+        }
+                function BnChange(){
+            document.getElementById("span_Time").innerText =
+             document.getElementById("txtTime").value;
+        }
+                function CnChange(){
+            document.getElementById("span_Month").innerText =
+             document.getElementById("txtMonth").value;
+        }
+                function DnChange(){
+            document.getElementById("span_Week").innerText =
+             document.getElementById("txtWeek").value;
+        }
+                function EnChange(){
+            document.getElementById("span_Datetime").innerText =
+             document.getElementById("txtDatetime").value;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        日期：<input id="txtDate" type="date" name="txtDate"  onchange="fnChange();"/>  <br />
+        <span id="span_Date"></span><br />
+        時間：<input id="txtTime" type="time" name="txtTime"   onchange="BnChange();"/> <br />
+          <span id="span_Time"></span><br />
+        月份：<input id="txtMonth" type="month" name="txtMonth" onchange="CnChange();"/><br />
+        <span id="span_Month"></span><br />
+        週次：<input id="txtWeek"type="week" name="txtWeek" onchange="DnChange();"/><br />
+        <span id="span_Week"></span><br />
+        本地日期與時間：<input id="txtDatetime"type="datetime-local" name="txtDatetime" onchange="EnChange();" /><br />
+        <span id="span_Datetime"></span><br />
+    </form>
+</body>
+</html>

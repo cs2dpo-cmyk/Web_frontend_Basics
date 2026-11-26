@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function fnChange() {
+            document.getElementById("span_salary").innerText =
+                document.getElementById("txtSalary").value;    
+        }
+        function BnChange() {
+            document.getElementById("span_Member").innerText =
+                document.getElementById("txtMember").value;    
+        }
+    </script>
+</head>
+<body>
+    <form>
+        薪資：<input type="range" id="txtSalary" onchange="fnChange();"
+                     value="25000" step="1000" max="70000" min="22000"  />
+                   </br>
+                   <span id="span_min">min:22000</span><br />
+                   <span id="span_max">max:25000</span><br />
+                   <span id="span_value">value:23000</span><br />
+                   <span id="span_salary">26000</span><br />
+
+        人數：<input type="range" id="txtMember" onchange="BnChange();"
+                     value="250" step="10" max="500" min="100"  />
+                   </br>
+                   <span id="span_min">min=220</span><br />
+                   <span id="span_max">max=250</span><br />
+                   <span id="span_value">value=230</span><br />
+                   <span id="span_Member">260</span><br />        
+     </form>
+</body>
+</html>
